@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var nome = "Larissa";
+    console.log(nome);  //saída: Larissa
+    
+    //retribuir o valor da variável nome, modificando o valor da variável para "Silva"
+
+    nome = "Silva";
+    console.log(nome);  //saída: Silva
+
+    //redeclarar a variável nome, atribuindo o valor "Gustavo"
+
+    var nome = "Gustavo";
+    console.log(nome);  //saída: Gustavo
+    if (true) {
+        var saudacao = "oi";
+        console.log(saudacao);  //saída: oi (funciona fora do bloco if, pois var tem escopo global)
+    }
+
+    let idade = 30; 
+    console.log(idade); // Saída: 30 
+    idade = 31; // Reatribuição é permitida
+    console.log(idade); // Saída: 31 
+    // let idade = 32; // ERRO: 'idade' já foi declarada
+</script>
+</html>

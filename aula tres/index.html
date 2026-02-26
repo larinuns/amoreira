@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    console.log('Olá, mundo!');
+    let resto = 10 % 2; 
+    let expo = 4**2;     
+    console.log('O resto da divisão é '+resto);     
+    console.log('O resultado da exponenciação é '+expo);      
+    
+
+    let a=5;     
+    let b=a++;     
+    console.log("O valor de b é: "+b);// nesse caso ele só modifica a variável a, mantendo a variavel b com o valor de a     let c=++a;     console.log("O valor de c é: "+c);     // === é estritamente igual, ele compara o tipo E o valor da variável      
+    
+
+    let idadeAluno= 18;     
+    let idadeMínima= 18;     
+    console.log("Tem a idade mínima? "+ (idadeAluno >= idadeMínima));     
+    console.log("É maior que 16? "+ (idadeAluno >= 16));
+    
+    
+    let numeroString="10";
+    let numeroNumber=10;
+    console.log((numeroString === numeroNumber));// 0 é considerado falso em comparações.      // || é OU, && é E, ! é NÃO      
+    
+    
+    let estaChovendo = true;
+    let temGuardaChuva= false;
+    let podeSair=(!estaChovendo || temGuardaChuva);
+    console.log("Pode sair? "+podeSair);
+    
+    
+    let nome="Larissa";
+    let sobrenome="Silva";
+    let nomeCompleto=nome+" "+sobrenome;
+    console.log("O nome completo é: "+nomeCompleto);
+    
+    
+    let valor1=10; 
+    let valor2=20;
+    let soma=valor1+valor2;   
+    console.log("A soma é: "+soma);  
+    
+    
+    let array=[1,2,3,4,5];   
+    console.log("O array é: "+array);    
+    console.log("O primeiro elemento do array é: "+array[0]);  
+  
+
+    let objeto={nome:"Larissa", idade:18}; 
+    console.log("O objeto é: "+objeto);  
+    console.log("O nome do objeto é: "+objeto.nome); 
+    let objeto2={nome:"João", idade:20}; 
+    console.log("O objeto 2 é: "+objeto2);  
+    console.log("O nome do objeto 2 é: "+objeto2.nome); 
+    
+    
+    //      // Operadores de comparação      // == compara o valor e converte o tipo se necessário      // === compara o valor e o tipo      // != diferente      // !== diferente e tipo diferente      // > maior que      // < menor que      // >= maior ou igual      // <= menor ou igual   
+
+     //calculo de média
+
+        let notaUm=8;
+        let notaDois=7;
+        let notaTres=9;
+        let media=(notaUm+notaDois+notaTres)/3;
+        let MEDIA_APROVACAO=7;
+        console.log("O aluno foi aprovado? "+(media >= MEDIA_APROVACAO));
+        console.log("A média é: "+media);
+
+     //conversor de temperatura
+
+        let celsius=25;
+        let fahrenheit=(celsius*9/5)+32;
+        console.log("A temperatura em Fahrenheit é: "+fahrenheit);
+
+    //verificador de login
+
+        let usuarioLogado=true;
+        let idadeUsuario=18;
+        let isAdmin=false;
+        let podeAcessarPainel=(usuarioLogado &&  isAdmin);
+        let podeComprar=(usuarioLogado && idadeUsuario >= 16);
+        let naoLogado=!usuarioLogado;
+        console.log("Pode acessar o painel? "+podeAcessarPainel);
+        console.log("Pode comprar? "+podeComprar);
+        console.log("Não está logado? "+naoLogado);
+
+    //desconto na loja
+        
+        let valorCompra=150;
+        let temCupom=true;
+        let DESCONTO_PERCENTUAL=0.10;
+        let valorComDesconto=valorCompra*(1-DESCONTO_PERCENTUAL);
+        console.log("O valor com desconto é: "+valorComDesconto);
+
+    //contagem regressiva
+        
+        let segundos=10;
+        console.log(10--,segundos);
+        console.log(9--,segundos);
+        console.log(8--,segundos);
+        console.log(7--,segundos);
+        console.log(6--,segundos);
+        console.log(5--,segundos);
+        console.log(4--,segundos);
+        console.log(3--,segundos);
+        console.log(2--,segundos);
+        console.log(1--,segundos); 
+        console.log(0--,segundos);
+        
+
+   </script>
+    </html>
