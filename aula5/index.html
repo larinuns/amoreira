@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>aula 5 - if, else e switch</h1>
+    <p>codigo aparecendo na console</p>
+
+</body>
+
+<script>
+
+    let idade = 20;
+    if(idade >= 18){
+        console.log('voce é maior de idade');
+    }
+    else{
+        console.log('voce é menor de idade');
+    }
+
+    // else if - (igual o elif em tlp)
+
+    let nota = 7.5;
+    if(nota >= 9){
+        console.log('excelente! conceito A.');
+    }
+    else if(nota >= 7){
+        console.log('muito bom! conceito B.');
+    }
+    else if (nota >= 5){
+        console.log('regular, conceito C.');
+    }
+    else{
+        console.log('reprovado.');
+    }
+
+    //true e false
+
+    let usuarioLogado = true
+    let isAdm = false
+    if( usuarioLogado = true){
+        document.write('<h2>bem vindo ao sistema</h2>');
+        if(isAdm){
+            document.write('<p>voce tem acesso</p>');
+        }else{
+            document.write('<p>voce tem nao acesso</p>');
+        }
+    }else{
+        document.write('<h2>faça login</h2>');
+    } 
+
+    //if ternario
+
+    let age = 17;
+    let status = (age >= 18) ? 'maior de   idade' : 'menor de idade';
+    console.log(status);
+
+    //switch
+
+    let diaSemana = 1;
+    switch(diaSemana){
+        case 1:{
+            console.log('domingo');
+            break;
+        }
+        case 2:{
+            console.log('segunda');
+            break;
+        }case 3:{
+            console.log('terça');
+            break;
+        }
+    }
+</script>
+</html>

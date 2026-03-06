@@ -1,0 +1,98 @@
+.h1-1
+{
+    color: #f2c4cd;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    margin-left: 450px;
+}
+.h1-2
+{
+    color: #f2c4cd78;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    margin-left: 445px;
+    margin-top: -88px;
+}
+.h3
+{
+    color: #f2c4cd;
+    font-family: cursive;
+    font-size: 24px;
+    margin-left: 500px;
+    margin-top: -40px;
+}
+.nav
+{
+    background-color: #f2c4cdca;
+    height: 80%;
+    width: 300px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 450px;
+    margin-top: 80px;
+}
+.one
+{
+    color: #f2c4cd;
+    left: 100px;
+    top: 400px;
+    position: absolute;
+}
+.one-o
+{
+    color: #f2c4cd78;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 200px;
+
+    
+}
+.two
+{
+    color: #f2c4cd;
+    left: 100px;
+    top: 570px;
+    position: absolute;
+}
+.two-t
+{
+    color: #f2c4cd78;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+.three
+{
+    color: #f2c4cd;
+    left: 100px;
+    top: 750px;
+    position: absolute;
+}
+.three-t
+{
+    color: #f2c4cd78;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+.four
+{
+    color: #f2c4cd;
+    left: 100px;
+    top: 925px;
+    position: absolute;
+}
+.four-f
+{
+    color: #f2c4cd78;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+.all
+{
+    background-color: #051f45;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    
+}
