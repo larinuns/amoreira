@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>aula 6</h1>
+   <p>este é o arquivo html de exemplo para os exercicios da aula 6</p> 
+</body>
+<script>
+    
+    let contador = 0;
+    while (contador < 5) {
+        console.log(`contador: ${contador}`); //crase ``
+        contador++; 
+    }
+
+    let i = 10;
+    do{
+        console.log(`valor de i: ${i}`);
+        i++;
+    }while(i < 15);
+
+    //estrutura for: (inicialização; condicao; incremento)
+
+    for (let i=0;i<5;i++){
+        console.log(`valor de i no for: ${i}`);
+    }
+
+    for(let i = 1; i <= 10; i++){
+        if(i===5) continue;
+        if(i===8) break;
+        console.log(`valor de i no for com break e continue: ${i}`);
+    }
+
+    //exercicios
+
+    //1. tabuada dinamica
+    
+    let numero = 2;
+    for (let i = 1; i < 11; i++ ){
+        console.log(numero + " x " + i + " = " + (numero * i));
+    }
+
+    //2. contagem regressiva
+
+    for (let i = 10; i >= 0; i--){
+        console.log(i);
+    }
+    
+    //3. soma de números
+
+    let soma = 0;
+    for (let i = 1; i <= 100; i++){
+        soma += i; //soma = soma + i
+    }
+    console.log("A soma dos números de 1 a 100 é: " + soma);
+
+    //4. apenas pares
+
+    for (let i = 1; i <= 20; i++){
+        if(i % 2 === 0){
+            console.log(i);
+        }
+    }
+    
+    //5. simulador de senha
+    
+    let senhaCorreta = "12345";
+    let senhaDigitada = "";
+    while(senhaDigitada !== senhaCorreta){
+        senhaDigitada = prompt("Digite a senha:");
+        if(senhaDigitada === senhaCorreta){
+            console.log("Acesso concedido!");
+        } else {
+            console.log("Senha incorreta, tente novamente.");
+        }
+    }
+</script>
+</html>
