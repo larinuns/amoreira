@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // exercícios p/ bimestral
+
+    // desafio 1 - calculadora de média e frequência:
+
+    let nota1 = 5;
+    let nota2 = 10;
+    let frequencia = 80;
+    let media = (nota1 + nota2) / 2;
+    if (media >= 7 && frequencia >= 75) {
+        console.log("Aprovado!");
+    }
+    else if (media >= 5 && media < 7 && frequencia >= 75) {
+    console.log("Recuperação!");
+    }
+    else {
+    console.log("Reprovado!");
+    }
+
+  // desafio 2 - menu de restaurante:
+
+    let codigoPedido = 1;
+    switch (codigoPedido) {
+    case 1:
+        console.log("hambúrguer : R$ 15,00");
+        break;
+    case 2:
+        console.log("batata frita : R$ 10,00");
+        break;
+    case 3:
+        console.log("refrigerante : R$ 5,00");
+        break;
+    case 4:
+        console.log("combo (todos os itens) : R$ 25,00");
+        break;
+    default:
+        console.log("Código inválido, tente novamente.");
+    }
+
+    // desafio 3 - "FizzBuzz" (Loop + Condicional):
+
+    for (let i = 1; i <= 30; i++) {
+        if (i % 3 === 0) {
+            console.log("Fizz");
+        }
+        else if (i % 5 === 0) {
+            console.log("Buzz");
+        }
+        else if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+        }
+        else {
+            console.log(i);
+        }
+    }
+
+    // desafio 4 - gerador de quadrados: 
+
+    let tamanho = 3;
+    for (let l = 0; l < tamanho; l++) {
+        let linha = "";
+        for (let c = 0; c < tamanho; c++) { // c = coluna e l = linha
+            linha += "* "; // += é o mesmo que linha = linha + "* "
+        }
+        console.log(linha);
+    }
+
+    // desafio 5 - jogo de adivinhação:
+
+    let numeroSecreto = 6;
+    let chute = 2; // chute é o número que o jogador vai tentar adivinhar
+    while (chute !== numeroSecreto) {
+        chute = parseInt(console.log("Digite um número entre 1 e 10:"));
+        if (chute === numeroSecreto) {
+            console.log(`Parabéns! Você acertou o número secreto ${numeroSecreto}!`); // $ {numeroSecreto} é uma template string, que permite inserir variáveis dentro de uma string
+        }
+        else if (chute < numeroSecreto) {
+            console.log("Tente um número maior!");
+        }
+        else {
+            console.log("Tente um número menor!");
+        }
+    }
+
+</script>
+</body>
+</html>

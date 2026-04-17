@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //revisão 2 p/ bimestral
+
+    //estrutura de repetição: for, while e do while
+
+    // for: o for é uma estrutura de repetição que é usada para repetir um bloco de código um número que repete quantas vezes a condição permitir.
+    
+    for (let i = 0; i < 5; i++) { // partes: inicialização (let i = 0), condição (i < 5) e o contador (i++), a inicialização é onde a variável de controle é criada e inicializada, a condição é onde a variável de controle é comparada com um valor específico, se a condição for verdadeira, o código dentro do for é executado, se a condição for falsa, o for é encerrado e o código continua a ser executado normalmente, o contador é onde a variável de controle é atualizada após cada iteração do loop, geralmente é usado para aumentar (++) ou diminuir (--) o valor da variável de controle.
+    console.log(i); // o código dentro do for é executado enquanto a condição for verdadeira, quando a condição for falsa, o for é encerrado e o código continua a ser executado normalmente.
+    }
+
+    // while (enquanto): o while é uma estrutura de repetição que é usada para repetir um bloco de código enquanto uma condição for verdadeira, ele é usado quando não sabemos quantas vezes o código precisa ser repetido.
+    
+    let j = 0;
+    while (j < 5) { // a condição é onde a variável de controle é comparada com um valor específico, se a condição for verdadeira, o código dentro do while é executado, se a condição for falsa, o while é encerrado e o código continua a ser executado normalmente.
+        console.log(j);
+        j++; // o contador é onde a variável de controle é atualizada após cada iteração do loop.
+    }
+
+    // do (faça) while (enquanto): o do while é uma estrutura de repetição que é usada para repetir um bloco de código pelo menos uma vez, ele é usado quando queremos garantir que o código seja executado pelo menos uma vez, mesmo que a condição seja falsa.
+
+    let dia = 0;
+    do { // o código dentro do do while é executado pelo menos uma vez, mesmo que a condição seja falsa, depois disso, a condição é verificada, se a condição for verdadeira, o código dentro do do while é executado novamente, se a condição for falsa, o do while é encerrado e o código continua a ser executado normalmente.
+        console.log(dia);
+        dia++;
+    } while (dia < 1); // a condição é onde a variável de controle é comparada com um valor específico, se a condição for verdadeira, o código dentro do do while é executado novamente, se a condição for falsa, o do while é encerrado e o código continua a ser executado normalmente.
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //revisão p/ bimestral
+
+    //estrutura de decisão : if, else if, else e switch case
+
+    // if, else if e else:
+
+    let idade = 20; 
+    if (idade >= 18) {  // o if ele é a base principal para a estrutura de decisão, ele roda o código SE a condição for verdadeira, se for falsa ele ignora o código e passa para o próximo bloco de código
+    console.log("Você é maior de idade!"); 
+    } 
+    else if (idade >= 13) { // o else if é a junção do if e do else, sendo uma 'continuação' do if basicamente, é um bloco de código que roda se a condição do if for FALSA e a condição do else if for verdadeira, se for falsa ele ignora o código e passa para o próximo bloco de código
+    console.log("Você é adolescente!"); 
+    } 
+    else { // o else é o ultimo colocado na estrutura, a última opção ou tmb usado para mostrar algum erro do usuário, ele é um bloco de código que roda se a condição do if for falsa e a condição do else if for falsa também.
+    console.log("Você é criança!"); 
+    }
+
+    let carro = 1;
+    if (carro === 1) {
+    console.log("básico");
+    }
+    else if (carro === 2) {
+    console.log("intermediário");
+    }
+    else if (carro === 3) {
+    console.log("avançado");
+    }
+    else if (carro === 4) {
+    console.log("luxo");
+    }
+    else {
+    console.log("carro não encontrado"); // um exemplo de como o else pode ser usado para mostrar um erro do usuário.
+    }
+
+    // switch case:
+
+    let dia = 3;
+    switch (dia) { // o switch case é uma estrutura de decisão que é usada para comparar uma variável com vários valores diferentes, ele é mais organizado e fácil de ler do que vários ifs e else ifs, ele é usado quando temos muitas opções para comparar.
+    case 1: // o case é usado para comparar a variável com um valor específico, se a variável for igual ao valor do case, o código dentro do case é executado, se não for igual, o switch case passa para o próximo case.
+    console.log("Domingo");
+    break; // o break é usado para sair do switch case, ele é necessário para evitar que o código continue rodando mesmo depois de encontrar a opção correta, o break é como se fosse um 'pare' para o switch case.
+    case 2:
+    console.log("Segunda-feira");
+    break;
+    case 3:
+    console.log("Terça-feira");
+    break;
+    case 4:
+    console.log("Quarta-feira");
+    break;
+    case 5:
+    console.log("Quinta-feira");
+    break;
+    case 6:
+    console.log("Sexta-feira");
+    break;
+    case 7:
+    console.log("Sábado");
+    break;
+    default: // o default é usado para mostrar um código caso nenhuma das opções anteriores seja verdadeira, ele é como se fosse um 'else' para o switch case, ele é opcional, mas é recomendado para mostrar um erro do usuário caso ele digite uma opção inválida.
+    console.log("Dia não encontrado");
+}
+
+</script>
+</body>
+</html>
