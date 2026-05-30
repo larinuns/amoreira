@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+                // aula 10 - revisão - lista de exercícios
+
+        //1 - Verificador de Desconto / logica, operações e estrutura de repetição
+
+let valorCompra = 120;
+let temCupom = true;
+let valorFinal;
+
+if (valorCompra > 100 && temCupom) {
+    valorFinal = valorCompra * 0.8; // 20% de desconto
+} else if (valorCompra > 100) {
+    valorFinal = valorCompra * 0.9; // 10% de desconto
+} else {
+    valorFinal = valorCompra;
+}
+console.log("Valor a pagar: R$ " + valorFinal);
+
+        //2 - Tabuada Dinâmica
+
+let multiplicador = 7;
+for (let i = 1; i <= 10; i++) {
+console.log(`${multiplicador} x ${i} = ${multiplicador * i}`);
+}
+
+        //3 - O Mistério do While 
+
+let contador = 10;
+while (contador >= 0) {
+    console.log("Contagem regressiva: " + contador);
+    contador -= 2;
+}
+
+        //4 - Criador de Títulos / Manipulação de DOM
+
+const input = document.getElementById("input-titulo");
+const botao = document.getElementById("btn-gerar");
+const titulo = document.getElementById("titulo-principal");
+
+botao.addEventListener("click", () => {
+    titulo.textContent = input.value;
+});
+
+        //5 - Lista de Compras Dinâmica
+
+function adicionarItem(nomeProduto) {
+    const lista = document.getElementById("lista-compras");
+    const novoItem = document.createElement("li");
+    novoItem.textContent = nomeProduto;
+    lista.appendChild(novoItem);
+}
+
+        //6 - botão liga e desliga / Estilos, Classes e Eventos
+
+const botaoo = document.getElementById("meu-botao");
+const caixa = document.getElementById("caixa");
+
+botaoo.addEventListener("click", () => {
+    caixa.classList.toggle("ativo");
+});
+
+        //7 - Estilo Inline via JS
+
+const desc = document.querySelector(".descricao");
+desc.style.color = "blue";
+desc.style.fontSize = "18px";
+
+        //8 - Eventos de Teclado
+
+const campo = document.querySelector("input");
+campo.addEventListener("keypress", () => {
+    console.log("Usuário está digitando...");
+});
+
+        //9 - Mini Galeria de Cores
+
+const quadrado = document.querySelector(".quadrado");
+
+quadrado.addEventListener("mouseover", () => {
+    quadrado.style.backgroundColor = "orange";
+});
+
+quadrado.addEventListener("mouseout", () => {
+    quadrado.style.backgroundColor = "gray";
+});
+
+quadrado.addEventListener("dblclick", () => {
+    quadrado.remove();
+});
+</script>
+</body>
+</html>

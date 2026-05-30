@@ -1,0 +1,18 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fcd9ff; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+.container { display: flex; gap: 40px; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        
+.form-cadastro { display: flex; flex-direction: column; width: 300px; }
+h2 { color: #e374e9; margin-bottom: 20px; }
+input, select, button { padding: 12px; margin-bottom: 15px; border: 1px solid #cdbdd0; border-radius: 6px; font-size: 16px; }
+        
+button { background-color: #e16feb; color: white; border: none; cursor: pointer; transition: 0.3s; }
+button:hover { background-color: #d854e4df; }
+#btn-limpar { background-color: #c7a4e0; }
+
+/* Estilo do Card de Prévia */
+.card-previa { width: 250px; border: 2px dashed #e205ff; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #fcd9ffdc; }
+.card-previa h3 { margin: 0; color: #f06bff; }
+.card-previa p { color: #a48b9f; font-size: 14px; }
+        
+/* Classe de destaque que será usada no evento Change */
+.destaque { border-style: solid; background-color: #fcd9ff; transform: scale(1.05); transition: 0.3s; }

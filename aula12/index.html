@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojavirtual - Aula 12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Lado Esquerdo: Entrada de Dados -->
+        <div class="form-cadastro">
+            <h2>Cadastro</h2>
+            <input type="text" id="nome-produto" placeholder="Nome do Produto">
+            
+            <select id="categoria-produto">
+                <option value="Sem Categoria">Selecione uma Categoria</option>
+                <option value="SkinCare">SkinCare</option>
+                <option value="Vestuário">Vestuário</option>
+                <option value="Maquiagens">Maquiagens</option>
+            </select>
+
+            <button id="btn-limpar">Limpar Formulário</button>
+        </div>
+
+        <!-- Lado Direito: Saída de Dados (Prévia) -->
+        <div class="card-previa" id="card-previa">
+            <h3 id="previa-nome">Nome do Produto</h3>
+            <p>Categoria: <span id="previa-categoria">Nenhuma</span></p>
+            <div id="status-estoque">Aguardando...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
